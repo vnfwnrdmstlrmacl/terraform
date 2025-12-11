@@ -54,7 +54,7 @@ resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv4" {
 
 
 resource "aws_instance" "myinstance" {
-  ami                    = ami-0f5fcdfbd140e4ab7
+  ami                    = "ami-0f5fcdfbd140e4ab7"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.allow_8080.id]
 
